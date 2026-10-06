@@ -81,7 +81,7 @@ Requiere Node 22 o superior y Chrome/Chromium/Edge instalado. El PDF pesa ~7 MB.
 
 ## Antes de enviarla
 
-1. **Completar el contacto** (página 30). En `index.html`, buscar `[ Nombre / Estudio ]`, `[ Email ]`, `[ Teléfono ]` y `[ Web ]` y reemplazarlos.
+1. **Contacto** (página 30): ya tiene estudio, email y teléfono. Para sumar una web, agregar una línea `<p class="ph-field">` más dentro de `<address class="contact">` en `index.html`.
 2. Si se cambia algún texto, **regenerar el PDF** (`node tools/export-pdf.mjs`).
 
 ## Qué es real y qué es ilustrativo

@@ -931,5 +931,7 @@
 .ph-field { display: grid; gap: calc(.35 * var(--u)); padding: calc(.9 * var(--u)) calc(1 * var(--u)); border: 1.5px dashed rgba(255, 244, 224, .3); border-radius: calc(.7 * var(--u)); }
 .ph-field small { font: 700 var(--t-label)/1 var(--f-mono); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); }
 .ph-field span { font: 400 calc(1.7 * var(--u))/1.1 var(--f-display); text-transform: uppercase; letter-spacing: .03em; }
+.ph-field span.is-lower { text-transform: none; letter-spacing: .01em; }
+.ph-field a { color: inherit; text-decoration: none; }
 .btn-dl--xl { justify-content: center; margin-top: calc(.6 * var(--u)); padding: calc(1.1 * var(--u)) calc(1.4 * var(--u)); font-size: var(--t-label); }
 .btn-dl--xl .ic { width: calc(1.4 * var(--u)); height: calc(1.4 * var(--u)); }
