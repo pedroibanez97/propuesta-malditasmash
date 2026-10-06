@@ -1,0 +1,98 @@
+/* ==========================================================================
+   print.css · exportación a PDF (A4 apaisado, una página por sección)
+   El escenario 16:10 se centra dentro de la hoja A4 y el fondo de cada página
+   se imprime a sangre, así el PDF reproduce exactamente la composición web.
+   ========================================================================== */
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  :root { --bar-h: 0px; }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  html,
+  body {
+    width: 297mm;
+    height: auto;
+    overflow: visible;
+    background: var(--black);
+  }
+
+  /* fuera del PDF: controles y navegación */
+  .topbar,
+  .progress,
+  .pager,
+  .skip,
+  .cover-hint,
+  .btn-dl,
+  .menu-toggle,
+  .line-hover { display: none !important; }
+
+  #deck {
+    height: auto;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .slide {
+    width: 297mm;
+    height: 210mm;
+    min-height: 0;
+    scroll-snap-align: none;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .slide:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  .slide::after { display: none; } /* grano: sólo en pantalla */
+
+  .stage {
+    width: 297mm;
+    max-height: none;
+    --pad-t: calc(4.4 * var(--u));
+    --pad-b: calc(3.6 * var(--u));
+  }
+
+  /* todo visible y en su estado final */
+  .r {
+    opacity: 1 !important;
+    translate: none !important;
+  }
+  [data-parallax] { translate: none !important; }
+  .scribble path { stroke-dashoffset: 0 !important; }
+  .flow::before,
+  .timeline::before { transform: scaleX(1) !important; }
+  .line-svg .line { stroke-dashoffset: 0 !important; }
+  .line-svg .area { opacity: 1 !important; }
+  .hbars i,
+  .g-bar { transform: none !important; }
+
+  /* elementos dimensionados con el viewport */
+  .pro-ghost { font-size: 110mm; right: -4mm; bottom: -22mm; }
+  .drip { height: 22mm; }
+  .cover-grid { background-size: 12mm 12mm; }
+  .halftone { background-size: 3mm 3mm; }
+
+  /* sin filtros en PDF: evita que Chrome rasterice las imágenes en alta
+     resolución (el archivo final pesa varias veces menos) */
+  img,
+  .cover-badge img,
+  .close-logo { filter: none !important; }
+  .phone,
+  .browser,
+  .tablet { -webkit-backdrop-filter: none; backdrop-filter: none; }
+}

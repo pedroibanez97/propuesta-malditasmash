@@ -1,0 +1,1319 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maldita Smash — Propuesta digital</title>
+<meta name="description" content="Propuesta comercial de desarrollo web y plataforma digital personalizada para Maldita Smash. START · BUSINESS · PRO.">
+<meta name="theme-color" content="#0B0A09">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Maldita Smash — Propuesta digital">
+<meta property="og:description" content="Una experiencia digital diseñada alrededor de tu marca. Propuesta de desarrollo web y plataforma digital personalizada.">
+<meta property="og:url" content="https://pedroibanez97.github.io/propuesta-malditasmash/propuesta/">
+<meta property="og:image" content="https://pedroibanez97.github.io/propuesta-malditasmash/propuesta/images/social-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="styles/fonts.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/slides.css">
+<link rel="stylesheet" href="styles/mockups.css">
+<link rel="stylesheet" href="styles/responsive.css">
+<link rel="stylesheet" href="styles/print.css">
+</head>
+<body data-ui="dark">
+
+<!-- ============ ICONOGRAFÍA (sprite propio) ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="i-burger" viewBox="0 0 24 24"><path d="M4 11c0-4 3.6-7 8-7s8 3 8 7z"/><path d="M3 14.5h18"/><path d="M4.5 18h15a1 1 0 0 1 0 2.5h-15a1 1 0 0 1 0-2.5z"/></symbol>
+    <symbol id="i-fries" viewBox="0 0 24 24"><path d="M5.5 10h13l-1.6 10.2a1 1 0 0 1-1 .8H8.1a1 1 0 0 1-1-.8z"/><path d="M8 10V4.5M11 10V3M14 10V4M17 10V5.5"/></symbol>
+    <symbol id="i-drink" viewBox="0 0 24 24"><path d="M6.2 8h11.6l-1.3 12.1a1 1 0 0 1-1 .9H8.5a1 1 0 0 1-1-.9z"/><path d="M5 8h14"/><path d="M12 8l2-5h3"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.5l2.2 10.4a1 1 0 0 0 1 .8h8.6a1 1 0 0 0 1-.8L20 8H6.4"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M8.5 16v-4M12.5 16V8M16.5 16v-6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-scooter" viewBox="0 0 24 24"><circle cx="5.5" cy="17" r="2.5"/><circle cx="18.5" cy="17" r="2.5"/><path d="M8 17h6.5l2.5-7h-3.5M17 10l1.5 7M4 12h6v3"/><path d="M14 6h3"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.4 1.2-3.8 2.5-5 .3 1.6 1 2.6 2 3 0-3 .5-5.5.5-8z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7.5L12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8.5 9v11"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow-r" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-d" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-web" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M6.5 6.5h.01M9 6.5h.01"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 2-2h12v18H7a2 2 0 0 1-2-2z"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M14 4.5c2.8-1.2 6-1.5 6-1.5s-.3 3.2-1.5 6l-6.5 6.5-4.5-4.5z"/><path d="M9 11H5.5L8 8.5h4M13 15v3.5l2.5-2.5v-4"/><path d="M6.5 17.5C5 19 5 21 5 21s2 0 3.5-1.5"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9 16.5H3z"/><path d="M12 10v4.5M12 17.2h.01"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4z"/><path d="M14.5 7v10" stroke-dasharray="2 2.4"/></symbol>
+    <symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.2"/><path d="M5.8 16.2a3.4 3.4 0 0 1 6.4 0M14.5 10h4M14.5 13.5h3"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.7-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.3 12 20 12 20z"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0 2.7 2.7 0 0 0 5.3 0"/><path d="M5 11.5V20h14v-8.5M10 20v-5h4v5"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 16.5c.2 1.5.8 2.1 2.3 2.3-1.5.2-2.1.8-2.3 2.3-.2-1.5-.8-2.1-2.3-2.3 1.5-.2 2.1-.8 2.3-2.3z"/></symbol>
+    <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3.5l13.5 7-5.8 1.9-2 5.9z"/><path d="M13 13l5.5 5.5"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-2-1.5-2 1.5-2-1.5-2 1.5-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.3-4.3L4 8.5M4 4v4.5h4.5M4 13a8 8 0 0 0 14.3 4.3L20 15.5M20 20v-4.5h-4.5"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M15 4a5 5 0 0 0-5.6 6.6L3.6 16.4a2.1 2.1 0 0 0 3 3l5.8-5.8A5 5 0 0 0 19.6 8l-3.1 1-1.9-1.9z"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="13" width="4" height="6.5" rx="1.5"/><rect x="17" y="13" width="4" height="6.5" rx="1.5"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M3 12h4l3-7 4 14 3-7h4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12.5l9 5 9-5M3 16.5l9 5 9-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-bars" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></symbol>
+    <!-- Goteo de cheddar: recurso gráfico propio inspirado en la mascota -->
+    <symbol id="drip" viewBox="0 0 1440 160" preserveAspectRatio="none"><path d="M0 0H1440V34H1409Q1395 34 1395 48V95A25 25 0 0 1 1345 95V48Q1345 34 1331 34H1295Q1283 34 1283 46V57A13 13 0 0 1 1257 57V46Q1257 34 1245 34H1187Q1173 34 1173 48V105A23 23 0 0 1 1127 105V48Q1127 34 1113 34H1070Q1056 34 1056 48V80A16 16 0 0 1 1024 80V48Q1024 34 1010 34H943Q929 34 929 48V117A29 29 0 0 1 871 117V48Q871 34 857 34H813Q802 34 802 45V46A12 12 0 0 1 778 46V45Q778 34 767 34H696Q682 34 682 48V96A22 22 0 0 1 638 96V48Q638 34 624 34H588Q575 34 575 48V69A15 15 0 0 1 545 69V48Q545 34 532 34H464Q450 34 450 48V120A30 30 0 0 1 390 120V48Q390 34 376 34H325Q313 34 313 46V51A13 13 0 0 1 287 51V46Q287 34 275 34H230Q216 34 216 48V112A26 26 0 0 1 164 112V48Q164 34 150 34H101Q87 34 87 48V75A17 17 0 0 1 53 75V48Q53 34 39 34H0Z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#s02">Saltar portada</a>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="topbar" id="topbar">
+  <a class="brand" href="#s01" aria-label="Maldita Smash — volver a la portada">
+    <img src="images/logo-mark-red-sm.webp" alt="" width="36" height="33">
+    <span class="brand-txt"><b>Maldita Smash</b><em>Propuesta digital · 2026</em></span>
+  </a>
+
+  <nav class="chapters" id="chapters" aria-label="Capítulos de la propuesta">
+    <ol>
+      <li><a href="#s01" data-chapter="1" title="Visión"><b>01</b><span>Visión</span></a></li>
+      <li><a href="#s05" data-chapter="2" title="Experiencia"><b>02</b><span>Experiencia</span></a></li>
+      <li><a href="#s10" data-chapter="3" title="Planes"><b>03</b><span>Planes</span></a></li>
+      <li><a href="#s15" data-chapter="4" title="Pro"><b>04</b><span>Pro</span></a></li>
+      <li><a href="#s20" data-chapter="5" title="Tecnología"><b>05</b><span>Tecnología</span></a></li>
+      <li><a href="#s23" data-chapter="6" title="Inversión"><b>06</b><span>Inversión</span></a></li>
+      <li><a href="#s25" data-chapter="7" title="Evolución"><b>07</b><span>Evolución</span></a></li>
+    </ol>
+  </nav>
+
+  <div class="topbar-actions">
+    <button class="btn btn-dl" type="button" data-print>
+      <svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>
+      <span>Descargar propuesta</span>
+    </button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="chapters" aria-label="Abrir índice">
+      <svg class="ic ic-open" aria-hidden="true"><use href="#i-bars"/></svg>
+      <svg class="ic ic-close" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+<nav class="pager" aria-label="Navegación entre páginas">
+  <button type="button" class="pager-btn" data-prev aria-label="Página anterior">
+    <svg class="ic" aria-hidden="true"><use href="#i-arrow-l"/></svg><span>Anterior</span>
+  </button>
+  <span class="pager-count" aria-live="polite"><b id="pg-cur">01</b><i>/</i><span id="pg-total">30</span></span>
+  <button type="button" class="pager-btn" data-next aria-label="Página siguiente">
+    <span>Siguiente</span><svg class="ic" aria-hidden="true"><use href="#i-arrow-r"/></svg>
+  </button>
+</nav>
+
+<main id="deck">
+
+<!-- =====================================================================
+     01 · PORTADA
+     ===================================================================== -->
+<section class="slide s-cover" id="s01" data-chapter="1" data-ui="dark" aria-label="Portada">
+  <div class="bg">
+    <div class="cover-glow"></div>
+    <div class="cover-grid"></div>
+  </div>
+  <div class="stage">
+    <p class="tag tag--ghost cover-tag r" style="--i:0">Propuesta comercial · 2026</p>
+
+    <h1 class="cover-title" aria-label="Maldita Smash">
+      <span class="cover-l1 r" style="--i:1" aria-hidden="true">Maldita</span>
+      <span class="cover-l2 r" style="--i:2" aria-hidden="true">Smash</span>
+    </h1>
+
+    <div class="cover-mascot r" style="--i:3" data-parallax="18">
+      <img src="images/mascota-rebelde.webp" alt="Mascota de Maldita Smash: una hamburguesa con gorra negra, guantes rojos y zapatillas amarillas, con gesto desafiante" width="576" height="803" fetchpriority="high">
+    </div>
+    <!-- Contorno del titular por delante de la mascota: efecto de entrelazado -->
+    <span class="cover-l2-outline r" style="--i:2" aria-hidden="true">Smash</span>
+
+    <div class="cover-badge r" style="--i:5" aria-hidden="true">
+      <svg viewBox="0 0 200 200" class="badge-ring">
+        <defs><path id="badge-circle" d="M100 100m-76 0a76 76 0 1 1 152 0a76 76 0 1 1-152 0"/></defs>
+        <text><textPath href="#badge-circle" textLength="474" lengthAdjust="spacing">MALDITA SMASH · EXPERIENCIA DIGITAL · 2026 ·</textPath></text>
+      </svg>
+      <img src="images/logo-mark-red-sm.webp" alt="" width="240" height="221">
+    </div>
+
+    <div class="cover-sub">
+      <p class="cover-h2 r" style="--i:4">Una experiencia digital diseñada alrededor de tu marca.</p>
+      <p class="cover-small r" style="--i:5">Propuesta de desarrollo web y plataforma digital personalizada.</p>
+    </div>
+
+    <p class="cover-hint r" style="--i:6" aria-hidden="true"><span>Usá</span> <kbd>←</kbd> <kbd>→</kbd> <span>o scroll</span></p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     02 · NO ES SOLO UNA WEB
+     ===================================================================== -->
+<section class="slide s-intro" id="s02" data-chapter="1" data-ui="light" data-bar="dark" aria-label="No es solo una web">
+  <div class="bg bg--drip">
+    <svg class="drip drip--top" aria-hidden="true"><use href="#drip"/></svg>
+  </div>
+  <div class="stage">
+    <p class="kicker r"><b>01</b> Visión <i>/</i> El punto de partida</p>
+    <h2 class="intro-title r" style="--i:1">
+      No queremos hacerte
+      <span class="intro-strike">“otra página web”.
+        <svg class="scribble" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M6 38C120 22 260 30 380 24S560 18 594 26"/><path pathLength="1" d="M18 46C160 34 330 40 470 33S570 30 588 36"/></svg>
+      </span>
+    </h2>
+    <p class="intro-lead r" style="--i:2">Queremos construir una experiencia digital que se sienta como <strong>Maldita&nbsp;Smash</strong> desde el primer segundo.</p>
+
+    <ol class="pillars">
+      <li class="pillar r" style="--i:3"><span class="pillar-n">01</span><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg><b>Identidad</b><small>La marca, intacta y amplificada.</small></li>
+      <li class="pillar-plus r" style="--i:3" aria-hidden="true">+</li>
+      <li class="pillar r" style="--i:4"><span class="pillar-n">02</span><svg class="ic" aria-hidden="true"><use href="#i-cursor"/></svg><b>Experiencia</b><small>Una navegación que se disfruta.</small></li>
+      <li class="pillar-plus r" style="--i:4" aria-hidden="true">+</li>
+      <li class="pillar r" style="--i:5"><span class="pillar-n">03</span><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg><b>Venta</b><small>Del antojo al pedido en pocos toques.</small></li>
+      <li class="pillar-plus r" style="--i:5" aria-hidden="true">+</li>
+      <li class="pillar r" style="--i:6"><span class="pillar-n">04</span><svg class="ic" aria-hidden="true"><use href="#i-code"/></svg><b>Tecnología</b><small>Una plataforma propia, rápida y segura.</small></li>
+      <li class="pillar-plus r" style="--i:6" aria-hidden="true">+</li>
+      <li class="pillar pillar--hot r" style="--i:7"><span class="pillar-n">05</span><svg class="ic" aria-hidden="true"><use href="#i-trend"/></svg><b>Crecimiento</b><small>Una base que evoluciona con el negocio.</small></li>
+    </ol>
+  </div>
+</section>
+
+<!-- =====================================================================
+     03 · ENTENDIMOS TU MARCA
+     ===================================================================== -->
+<section class="slide s-brand" id="s03" data-chapter="1" data-ui="dark" aria-label="Entendimos tu marca">
+  <div class="stage">
+    <div class="brand-copy">
+      <p class="kicker r"><b>01</b> Visión <i>/</i> Entendimos tu marca</p>
+      <h2 class="t-h1 r" style="--i:1">Una marca que no pasa <span class="hl-y">desapercibida.</span></h2>
+      <p class="t-lead brand-lead r" style="--i:2">Maldita Smash combina gastronomía, cultura urbana y una identidad visual extremadamente reconocible.</p>
+      <ul class="brand-reads">
+        <li class="r" style="--i:3"><b>Mascota con carácter propio</b><span>No es un logo: es un personaje con actitud.</span></li>
+        <li class="r" style="--i:4"><b>3D hiperrealista</b><span>Volumen, textura y luz de campaña publicitaria.</span></li>
+        <li class="r" style="--i:5"><b>Producto protagonista</b><span>El queso que chorrea es parte del idioma visual.</span></li>
+      </ul>
+    </div>
+
+    <div class="brand-collage" aria-label="Recursos reales de la marca">
+      <figure class="bc bc-1 r" style="--i:2">
+        <img src="images/escena-rebelde.jpg" alt="La mascota de Maldita Smash caminando gigante sobre una plaza urbana" width="640" height="1136" loading="lazy">
+        <figcaption>Mascota</figcaption>
+      </figure>
+      <figure class="bc bc-2 r" style="--i:3">
+        <img src="images/logo-original.jpg" alt="Logo 3D de Maldita Smash: una M roja enlazada en un círculo, sobre fondo amarillo" width="1080" height="1080" loading="lazy">
+        <figcaption>Logo 3D</figcaption>
+      </figure>
+      <figure class="bc bc-3 r" style="--i:4">
+        <img src="images/burger-foto.jpg" alt="Hamburguesa smash con cheddar fundido sobre fondo naranja" width="1080" height="1440" loading="lazy">
+        <figcaption>Producto</figcaption>
+      </figure>
+      <figure class="bc bc-4 r" style="--i:5">
+        <img src="images/escena-paracaidas.jpg" alt="La mascota descendiendo en paracaídas de noche frente a una iglesia" width="640" height="1136" loading="lazy">
+        <figcaption>Campaña</figcaption>
+      </figure>
+    </div>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Rebelde</span><i>✶</i><span>Urbana</span><i>✶</i><span>Intensa</span><i>✶</i><span>Street</span><i>✶</i><span>3D</span><i>✶</i><span>Food</span><i>✶</i><span>Actitud</span><i>✶</i>
+        <span>Rebelde</span><i>✶</i><span>Urbana</span><i>✶</i><span>Intensa</span><i>✶</i><span>Street</span><i>✶</i><span>3D</span><i>✶</i><span>Food</span><i>✶</i><span>Actitud</span><i>✶</i>
+      </div>
+    </div>
+  </div>
+  <p class="sr-only">Palabras que definen la marca: rebelde, urbana, intensa, street, 3D, food, actitud.</p>
+</section>
+
+<!-- =====================================================================
+     04 · MOODBOARD
+     ===================================================================== -->
+<section class="slide s-mood" id="s04" data-chapter="1" data-ui="dark" aria-label="Dirección visual">
+  <div class="stage">
+    <header class="mood-head">
+      <p class="kicker r"><b>01</b> Visión <i>/</i> Dirección visual</p>
+      <h2 class="t-h2 r" style="--i:1">El lenguaje visual <span class="hl-y">ya existe.</span></h2>
+    </header>
+
+    <div class="mood-grid">
+      <figure class="mt mt-hero r" style="--i:1">
+        <img src="images/escena-paracaidas.jpg" alt="Mascota en paracaídas sobre la ciudad de noche" width="640" height="1136" loading="lazy">
+        <figcaption>Personaje · narrativa</figcaption>
+      </figure>
+      <figure class="mt mt-eyes r" style="--i:2" role="img" aria-label="Detalle: la mirada desafiante de la mascota"><span class="crop crop-eyes"></span><figcaption>Mirada</figcaption></figure>
+      <figure class="mt mt-cap r" style="--i:3" role="img" aria-label="Detalle: la M de la marca en la gorra"><span class="crop crop-cap"></span><figcaption>La M en la gorra</figcaption></figure>
+      <figure class="mt mt-cheese r" style="--i:4" role="img" aria-label="Detalle: textura de cheddar fundido"><span class="crop crop-cheese"></span><figcaption>Textura · cheddar</figcaption></figure>
+      <figure class="mt mt-kicks r" style="--i:5" role="img" aria-label="Detalle: zapatillas amarillas y negras con la M"><span class="crop crop-kicks"></span><figcaption>Streetwear</figcaption></figure>
+      <figure class="mt mt-logo r" style="--i:3">
+        <img src="images/logo-mark-red.webp" alt="Isotipo 3D de Maldita Smash" width="720" height="663" loading="lazy">
+        <figcaption>Isotipo 3D</figcaption>
+      </figure>
+
+      <div class="mt mt-palette r" style="--i:4">
+        <div class="sw sw-y"><b>Mostaza</b><span>#FCC302</span><small>Queso · logo · highlights</small></div>
+        <div class="sw sw-r"><b>Rojo</b><span>#E5202A</span><small>Acción · CTA · estados</small></div>
+        <div class="sw sw-k"><b>Negro</b><span>#0B0A09</span><small>Estructura · paneles</small></div>
+        <div class="sw sw-o"><b>Naranja</b><span>#E8891C</span><small>Producto · energía</small></div>
+      </div>
+
+      <div class="mt mt-type r" style="--i:5">
+        <span class="type-big">Aa</span>
+        <div><b>Anton</b><small>Titulares de cartel</small></div>
+        <div><b class="f-body">Archivo</b><small>Lectura e interfaz</small></div>
+        <div><b class="f-mono">Space Mono</b><small>Datos y etiquetas</small></div>
+      </div>
+
+      <blockquote class="mt mt-quote r" style="--i:6">
+        <p>Esta identidad no se utiliza como decoración. <strong>Se convierte en el lenguaje visual de la plataforma.</strong></p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     05 · VISIÓN DIGITAL — HOME
+     ===================================================================== -->
+<section class="slide s-vision" id="s05" data-chapter="2" data-ui="dark" aria-label="Cómo se ve Maldita Smash en internet">
+  <div class="bg"><div class="vision-glow"></div></div>
+  <div class="stage">
+    <div class="vision-copy">
+      <p class="kicker r"><b>02</b> Experiencia <i>/</i> Visión digital</p>
+      <h2 class="t-h1 r" style="--i:1">¿Cómo se ve Maldita Smash <span class="hl-y">en internet?</span></h2>
+      <p class="t-body vision-txt r" style="--i:2">No partimos de una plantilla: la web se diseña con los mismos códigos de la marca —mascota, color, volumen y actitud— para que se reconozca antes de leer el nombre.</p>
+      <div class="tags r" style="--i:3"><span class="tag tag--concept">Concepto</span><span class="tag">Dirección visual</span></div>
+    </div>
+
+    <figure class="browser r" style="--i:2" role="img" aria-label="Concepto de página de inicio de Maldita Smash en computadora: menú superior, titular 'Smash, queso, actitud', mascota y botones para ver el menú y pedir">
+      <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span class="browser-url"><svg class="ic"><use href="#i-lock"/></svg>[ tu dominio ]</span></div>
+      <div class="site" aria-hidden="true">
+        <div class="site-nav">
+          <span class="site-logo"><img src="images/logo-mark-red-sm.webp" alt=""><b>MALDITA SMASH</b></span>
+          <span class="site-links"><span>Menú</span><span>Combos</span><span>Nosotros</span></span>
+          <span class="site-cta">Pedir ahora</span>
+        </div>
+        <div class="site-hero">
+          <div class="site-hero-copy">
+            <span class="site-eyebrow">Abierto · pedidos online</span>
+            <b class="site-h">Smash.<br>Queso.<br><em>Actitud.</em></b>
+            <span class="site-btns"><span class="sb sb-y">Ver menú</span><span class="sb sb-r">Pedir ahora <svg class="ic"><use href="#i-arrow-r"/></svg></span></span>
+          </div>
+          <div class="site-hero-art">
+            <span class="site-disc"></span>
+            <img class="site-mascot" src="images/mascota-rebelde.webp" alt="">
+          </div>
+        </div>
+        <div class="site-band"><span>Malditas</span><i>✶</i><span>Smash</span><i>✶</i><span>Cheddar</span><i>✶</i><span>Actitud</span><i>✶</i><span>Malditas</span><i>✶</i><span>Smash</span></div>
+        <div class="site-cards">
+          <div class="sc"><span class="sc-img sc-y"><img src="images/burger-recorte-sm.webp" alt=""></span><b>Doble Smash</b><small>$ X.XXX</small></div>
+          <div class="sc"><span class="sc-img sc-r"><img src="images/burger-recorte-sm.webp" alt=""></span><b>Bacon Maldito</b><small>$ X.XXX</small></div>
+          <div class="sc"><span class="sc-img sc-k"><img src="images/burger-recorte-sm.webp" alt=""></span><b>Triple Smash</b><small>$ X.XXX</small></div>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="phone vision-phone r" style="--i:4" role="img" aria-label="Concepto de la misma página de inicio en celular">
+      <div class="phone-screen" aria-hidden="true">
+        <div class="ph-status"><span>21:30</span><span class="ph-notch"></span><span>●●●</span></div>
+        <div class="app app--home">
+          <div class="app-top"><img src="images/logo-mark-red-sm.webp" alt=""><b>MALDITA SMASH</b><span class="app-cart"><svg class="ic"><use href="#i-cart"/></svg></span></div>
+          <div class="home-hero">
+            <img src="images/mascota-rebelde.webp" alt="">
+            <b>Smash.<br>Queso.<br><em>Actitud.</em></b>
+          </div>
+          <div class="home-cats"><span class="is-on">Malditas</span><span>Papas</span><span>Bebidas</span></div>
+          <div class="home-card"><span class="hc-img"><img src="images/burger-recorte-sm.webp" alt=""></span><span><b>Doble Smash</b><small>$ X.XXX</small></span><i>+</i></div>
+          <div class="home-sticky">Pedir ahora <svg class="ic"><use href="#i-arrow-r"/></svg></div>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- =====================================================================
+     06 · EXPERIENCIA DEL CLIENTE — FLUJO
+     ===================================================================== -->
+<section class="slide s-flow" id="s06" data-chapter="2" data-ui="dark" aria-label="Experiencia del cliente">
+  <div class="stage">
+    <img class="flow-burger r" style="--i:2" src="images/burger-recorte.webp" alt="" width="851" height="799" loading="lazy" data-parallax="10">
+    <header class="flow-head">
+      <p class="kicker r"><b>02</b> Experiencia <i>/</i> El recorrido del cliente</p>
+      <h2 class="t-h1 r" style="--i:1">Del antojo <span class="hl-y">al pedido.</span></h2>
+      <p class="t-lead r" style="--i:2">Una experiencia simple convierte la web en un canal de ventas.</p>
+    </header>
+
+    <ol class="flow">
+      <li class="fl r" style="--i:3"><span class="fl-n">01</span><span class="fl-ic"><svg class="ic"><use href="#i-phone"/></svg></span><b>Entra</b><small>Desde Instagram, un QR o Google.</small></li>
+      <li class="fl r" style="--i:4"><span class="fl-n">02</span><span class="fl-ic"><svg class="ic"><use href="#i-sparkle"/></svg></span><b>Descubre</b><small>La marca se presenta con todo su carácter.</small></li>
+      <li class="fl r" style="--i:5"><span class="fl-n">03</span><span class="fl-ic"><svg class="ic"><use href="#i-menu"/></svg></span><b>Elige</b><small>Menú claro, por categorías y con fotos protagonistas.</small></li>
+      <li class="fl r" style="--i:6"><span class="fl-n">04</span><span class="fl-ic"><svg class="ic"><use href="#i-plus"/></svg></span><b>Personaliza</b><small>Ajusta cantidades y arma su pedido a su manera.*</small></li>
+      <li class="fl r" style="--i:7"><span class="fl-n">05</span><span class="fl-ic"><svg class="ic"><use href="#i-cart"/></svg></span><b>Agrega al carrito</b><small>El pedido siempre a la vista, sin perder el hilo.</small></li>
+      <li class="fl fl--hot r" style="--i:8"><span class="fl-n">06</span><span class="fl-ic"><svg class="ic"><use href="#i-card"/></svg></span><b>Paga</b><small>WhatsApp en START · Mercado Pago desde BUSINESS.</small></li>
+      <li class="fl r" style="--i:9"><span class="fl-n">07</span><span class="fl-ic"><svg class="ic"><use href="#i-store"/></svg></span><b>Recibe</b><small>Retiro o delivery, con seguimiento según el plan.</small></li>
+    </ol>
+    <p class="footnote r" style="--i:10">* El alcance de la personalización (extras, variantes, aclaraciones) se define en la etapa de descubrimiento.</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     07 · MENÚ
+     ===================================================================== -->
+<section class="slide s-menu" id="s07" data-chapter="2" data-ui="light" aria-label="Ejemplo de menú digital">
+  <div class="bg"><div class="halftone"></div></div>
+  <div class="stage">
+    <figure class="phone menu-phone r" style="--i:1" role="img" aria-label="Ejemplo visual de menú en celular con categorías Malditas, Acompañamientos y Bebidas">
+      <div class="phone-screen" aria-hidden="true">
+        <div class="ph-status"><span>21:30</span><span class="ph-notch"></span><span>●●●</span></div>
+        <div class="app app--menu">
+          <div class="app-top"><img src="images/logo-mark-red-sm.webp" alt=""><b>MENÚ</b><span class="app-cart"><svg class="ic"><use href="#i-cart"/></svg><em>2</em></span></div>
+          <div class="app-search"><svg class="ic"><use href="#i-search"/></svg>Buscar en el menú</div>
+          <div class="app-chips"><span class="is-on">Malditas</span><span>Acompañamientos</span><span>Bebidas</span></div>
+          <p class="app-sec">Malditas</p>
+          <div class="mi"><span class="mi-img t-y"><img src="images/burger-recorte-sm.webp" alt=""></span><span class="mi-txt"><b>Doble Smash</b><small>Doble medallón · cheddar</small><em>$ X.XXX</em></span><i>+</i></div>
+          <div class="mi"><span class="mi-img t-r"><img src="images/burger-recorte-sm.webp" alt=""></span><span class="mi-txt"><b>Bacon Maldito</b><small>Bacon crocante · cheddar</small><em>$ X.XXX</em></span><i>+</i></div>
+          <div class="mi"><span class="mi-img t-k"><img src="images/burger-recorte-sm.webp" alt=""></span><span class="mi-txt"><b>Triple Smash</b><small>Para los que no dudan</small><em>$ X.XXX</em></span><i>+</i></div>
+          <p class="app-sec">Acompañamientos</p>
+          <div class="mi"><span class="mi-img t-y"><svg class="ic"><use href="#i-fries"/></svg></span><span class="mi-txt"><b>Papas</b><small>Clásicas</small><em>$ X.XXX</em></span><i>+</i></div>
+          <div class="mi"><span class="mi-img t-o"><svg class="ic"><use href="#i-fries"/></svg></span><span class="mi-txt"><b>Papas Cheddar</b><small>Con cheddar fundido</small><em>$ X.XXX</em></span><i>+</i></div>
+          <p class="app-sec">Bebidas</p>
+          <div class="mi"><span class="mi-img t-r"><svg class="ic"><use href="#i-drink"/></svg></span><span class="mi-txt"><b>Coca-Cola</b><small>Línea de bebidas</small><em>$ X.XXX</em></span><i>+</i></div>
+        </div>
+      </div>
+    </figure>
+
+    <div class="menu-poster" aria-hidden="true">
+      <p class="mp-cat r" style="--i:2"><span>Malditas</span></p>
+      <p class="mp-row r" style="--i:3"><svg class="ic"><use href="#i-burger"/></svg>Doble Smash</p>
+      <p class="mp-row r" style="--i:3"><svg class="ic"><use href="#i-burger"/></svg>Bacon Maldito</p>
+      <p class="mp-row r" style="--i:3"><svg class="ic"><use href="#i-burger"/></svg>Triple Smash</p>
+      <p class="mp-cat r" style="--i:4"><span>Acompañamientos</span></p>
+      <p class="mp-row r" style="--i:5"><svg class="ic"><use href="#i-fries"/></svg>Papas</p>
+      <p class="mp-row r" style="--i:5"><svg class="ic"><use href="#i-fries"/></svg>Papas Cheddar</p>
+      <p class="mp-cat r" style="--i:6"><span>Bebidas</span></p>
+      <p class="mp-row r" style="--i:7"><svg class="ic"><use href="#i-drink"/></svg>Coca-Cola</p>
+    </div>
+
+    <div class="menu-copy">
+      <p class="kicker r"><b>02</b> Experiencia <i>/</i> Menú digital</p>
+      <h2 class="t-h1 r" style="--i:1">La web puede ser mucho más que <span class="hl-r">un menú.</span></h2>
+      <ul class="feat-list">
+        <li class="r" style="--i:2"><b>Categorías a un toque</b><span>Malditas, acompañamientos y bebidas, sin buscar de más.</span></li>
+        <li class="r" style="--i:3"><b>Producto protagonista</b><span>Fotos grandes y descripciones que abren el apetito.</span></li>
+        <li class="r" style="--i:4"><b>Se actualiza desde el panel</b><span>Productos, precios y categorías, sin depender de nadie.</span></li>
+      </ul>
+      <p class="tag tag--concept r" style="--i:5">Ejemplo visual · nombres y precios ilustrativos</p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     08 · PRODUCTO
+     ===================================================================== -->
+<section class="slide s-product" id="s08" data-chapter="2" data-ui="light" aria-label="Ejemplo de pantalla de producto">
+  <div class="bg"><div class="orange-light"></div></div>
+  <div class="stage">
+    <div class="product-copy">
+      <p class="kicker r"><b>02</b> Experiencia <i>/</i> Producto</p>
+      <h2 class="t-h1 r" style="--i:1">Hasta el botón tiene <span class="hl-box">actitud.</span></h2>
+      <p class="t-body r" style="--i:2">La identidad se traslada incluso a los componentes más chicos: botones, estados, etiquetas y textos. Cada detalle suena a Maldita Smash.</p>
+      <p class="tag tag--dark r" style="--i:3">Ejemplo visual</p>
+    </div>
+
+    <figure class="phone product-phone r" style="--i:2" role="img" aria-label="Ejemplo visual de pantalla de producto Doble Smash con foto, descripción, precio de ejemplo, disponibilidad, selector de cantidad y botón Lo quiero">
+      <div class="phone-screen" aria-hidden="true">
+        <div class="ph-status ph-status--over"><span>21:30</span><span class="ph-notch"></span><span>●●●</span></div>
+        <div class="app app--product">
+          <div class="pd-photo"><img src="images/burger-foto.jpg" alt=""><span class="pd-back"><svg class="ic"><use href="#i-arrow-l"/></svg></span><span class="pd-fav"><svg class="ic"><use href="#i-heart"/></svg></span></div>
+          <div class="pd-body">
+            <span class="pd-avail"><i></i>Disponible</span>
+            <b class="pd-name">Doble Smash</b>
+            <p class="pd-desc">Dos medallones smasheados, cheddar fundido y pan de papa. <span>(descripción de ejemplo)</span></p>
+            <div class="pd-row">
+              <span class="pd-price">$ X.XXX</span>
+              <span class="qty"><i><svg class="ic"><use href="#i-minus"/></svg></i><b>1</b><i><svg class="ic"><use href="#i-plus"/></svg></i></span>
+            </div>
+            <span class="btn-loquiero">Lo quiero.</span>
+          </div>
+        </div>
+      </div>
+    </figure>
+
+    <ul class="specimens" aria-label="Componentes de interfaz con la identidad de la marca">
+      <li class="spec r" style="--i:3"><span class="spec-k">Botón principal</span><span class="btn-loquiero btn-loquiero--xl">Lo quiero.</span></li>
+      <li class="spec r" style="--i:4"><span class="spec-k">Cantidad</span><span class="qty qty--xl"><i><svg class="ic"><use href="#i-minus"/></svg></i><b>2</b><i><svg class="ic"><use href="#i-plus"/></svg></i></span></li>
+      <li class="spec r" style="--i:5"><span class="spec-k">Estados</span><span class="spec-row"><span class="pd-avail pd-avail--xl"><i></i>Disponible</span><span class="pd-avail pd-avail--xl is-off"><i></i>Agotado hoy</span></span></li>
+      <li class="spec r" style="--i:6"><span class="spec-k">Etiquetas</span><span class="spec-row"><span class="sticker">Nueva</span><span class="sticker sticker--y">+ Cheddar</span><span class="sticker sticker--k">Picante</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =====================================================================
+     09 · CARRITO Y CHECKOUT
+     ===================================================================== -->
+<section class="slide s-cart" id="s09" data-chapter="2" data-ui="dark" aria-label="Carrito y checkout">
+  <div class="stage">
+    <div class="cart-phones">
+      <figure class="phone cart-phone-back r" style="--i:3" role="img" aria-label="Ejemplo visual del paso de confirmación: forma de entrega y medio de pago">
+        <div class="phone-screen" aria-hidden="true">
+          <div class="ph-status"><span>21:32</span><span class="ph-notch"></span><span>●●●</span></div>
+          <div class="app app--checkout">
+            <p class="ck-step">Paso 2 de 2</p>
+            <b class="ck-title">¿Cómo lo recibís?</b>
+            <div class="ck-toggle"><span>Retiro</span><span class="is-on">Delivery</span></div>
+            <div class="ck-field"><svg class="ic"><use href="#i-pin"/></svg><span>Dirección de entrega</span></div>
+            <b class="ck-title ck-title--s">Pago</b>
+            <div class="ck-opt is-on"><i></i><span>Mercado Pago</span><em>Business · Pro</em></div>
+            <div class="ck-opt"><i></i><span>Coordinar por WhatsApp</span><em>Start</em></div>
+            <span class="ck-btn">Confirmar pedido</span>
+          </div>
+        </div>
+      </figure>
+      <figure class="phone cart-phone r" style="--i:1" role="img" aria-label="Ejemplo visual de carrito: Doble Smash, Papas Cheddar y Coca-Cola, total de ejemplo y botón continuar">
+        <div class="phone-screen" aria-hidden="true">
+          <div class="ph-status"><span>21:31</span><span class="ph-notch"></span><span>●●●</span></div>
+          <div class="app app--cart">
+            <b class="cart-title">Tu pedido</b>
+            <div class="ci"><span class="ci-img t-y"><img src="images/burger-recorte-sm.webp" alt=""></span><span class="ci-name">Doble Smash</span><span class="ci-q">x1</span></div>
+            <div class="ci"><span class="ci-img t-o"><svg class="ic"><use href="#i-fries"/></svg></span><span class="ci-name">Papas Cheddar</span><span class="ci-q">x1</span></div>
+            <div class="ci"><span class="ci-img t-r"><svg class="ic"><use href="#i-drink"/></svg></span><span class="ci-name">Coca-Cola</span><span class="ci-q">x1</span></div>
+            <div class="cart-sum"><span>Subtotal</span><span>$ XX.XXX</span></div>
+            <div class="cart-sum"><span>Envío</span><span>$ X.XXX</span></div>
+            <div class="cart-total"><span>Total</span><b>$ XX.XXX</b></div>
+            <span class="cart-btn">Continuar <svg class="ic"><use href="#i-arrow-r"/></svg></span>
+          </div>
+        </div>
+      </figure>
+    </div>
+
+    <div class="cart-copy">
+      <p class="kicker r"><b>02</b> Experiencia <i>/</i> Carrito y checkout</p>
+      <h2 class="t-h1 r" style="--i:1">Menos pasos. <span class="hl-y">Más pedidos.</span></h2>
+      <p class="t-lead r" style="--i:2">El proceso de compra se diseña para reducir fricción y priorizar el uso desde el celular.</p>
+      <ol class="num-list">
+        <li class="r" style="--i:3"><span>01</span><p><b>Todo el pedido a la vista.</b> Cantidades y total claros en cada paso.</p></li>
+        <li class="r" style="--i:4"><span>02</span><p><b>Retiro o delivery en un toque.</b> Sin formularios eternos.</p></li>
+        <li class="r" style="--i:5"><span>03</span><p><b>Un cierre según el plan.</b> Pedido por WhatsApp en START; pago online con Mercado Pago en BUSINESS y PRO.</p></li>
+      </ol>
+      <p class="tag tag--concept r" style="--i:6">Ejemplo visual · montos ilustrativos</p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     10 · TRES FORMAS DE EMPEZAR
+     ===================================================================== -->
+<section class="slide s-tiers" id="s10" data-chapter="3" data-ui="dark" aria-label="Tres formas de empezar">
+  <div class="bg"><div class="tiers-m"></div></div>
+  <div class="stage">
+    <header class="tiers-head">
+      <p class="kicker kicker--light r"><b>03</b> Planes <i>/</i> Las propuestas</p>
+      <h2 class="t-mega r" style="--i:1">Tres formas<br>de empezar.</h2>
+      <p class="t-lead r" style="--i:2">Una misma visión. Tres niveles de profundidad.</p>
+    </header>
+
+    <div class="stairs">
+      <article class="step step-1 r" style="--i:3">
+        <span class="step-n">01</span>
+        <h3>Start</h3>
+        <p>Tu marca, tu menú y tus pedidos online.</p>
+        <div class="step-price"><small>USD</small><b>800</b></div>
+        <span class="step-time">~15 días hábiles</span>
+      </article>
+      <article class="step step-2 r" style="--i:4">
+        <span class="step-n">02</span>
+        <h3>Business</h3>
+        <p>Convertí tu web en un canal de ventas.</p>
+        <div class="step-price"><small>USD</small><b>1.600</b></div>
+        <span class="step-time">3–4 semanas</span>
+      </article>
+      <article class="step step-3 r" style="--i:5">
+        <span class="step-n">03</span>
+        <h3>Pro</h3>
+        <p>Una plataforma para hacer crecer el negocio.</p>
+        <div class="step-price"><small>USD</small><b>3.200</b></div>
+        <span class="step-time">5–8 semanas</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     11 · START
+     ===================================================================== -->
+<section class="slide s-plan s-start" id="s11" data-chapter="3" data-ui="dark" aria-label="Plan Start">
+  <div class="stage">
+    <div class="plan-id">
+      <p class="kicker r"><b>03</b> Planes <i>/</i> Plan 01</p>
+      <h2 class="plan-name r" style="--i:1">Start</h2>
+      <p class="plan-claim r" style="--i:2">Tu marca. Tu menú.<br>Tus pedidos.</p>
+      <div class="plan-meta r" style="--i:3">
+        <div><small>Inversión</small><b>USD 800</b></div>
+        <div><small>Plazo</small><b>~15 días hábiles</b></div>
+      </div>
+      <div class="plan-ideal r" style="--i:4"><small>Ideal para</small><p>Profesionalizar la presencia digital y comenzar a recibir pedidos online.</p></div>
+    </div>
+
+    <div class="plan-body">
+      <ul class="tiles">
+        <li class="tile r" style="--i:3"><svg class="ic"><use href="#i-web"/></svg><b>Web personalizada</b><small>Diseño propio con la identidad de la marca.</small></li>
+        <li class="tile r" style="--i:4"><svg class="ic"><use href="#i-menu"/></svg><b>Menú digital</b><small>Categorías y productos.</small></li>
+        <li class="tile r" style="--i:5"><svg class="ic"><use href="#i-cart"/></svg><b>Carrito básico</b><small>Retiro y delivery.</small></li>
+        <li class="tile tile--y r" style="--i:6"><svg class="ic"><use href="#i-chat"/></svg><b>Pedidos por WhatsApp</b><small>El pedido llega armado y listo para confirmar.</small></li>
+        <li class="tile r" style="--i:7"><svg class="ic"><use href="#i-panel"/></svg><b>Panel administrativo</b><small>Básico: productos y categorías.</small></li>
+        <li class="tile r" style="--i:8"><svg class="ic"><use href="#i-chart"/></svg><b>Métricas básicas</b><small>Lo esencial para entender la demanda.</small></li>
+        <li class="tile r" style="--i:9"><svg class="ic"><use href="#i-rocket"/></svg><b>Producción</b><small>Deploy, base de datos y HTTPS/SSL.</small></li>
+      </ul>
+
+      <figure class="wa r" style="--i:8" role="img" aria-label="Ejemplo visual de un pedido que llega por WhatsApp con el detalle armado">
+        <div aria-hidden="true">
+          <span class="wa-h"><svg class="ic"><use href="#i-chat"/></svg>Nuevo pedido · web</span>
+          <p class="wa-msg"><b>Pedido #0128</b><br>1× Doble Smash<br>1× Papas Cheddar<br>1× Coca-Cola<br><span>Retiro · 21:45</span></p>
+          <span class="wa-meta">Ejemplo visual</span>
+        </div>
+      </figure>
+
+      <p class="plan-sec r" style="--i:10"><svg class="ic"><use href="#i-shield"/></svg><span><b>Seguridad incluida:</b> autenticación administrativa · protección básica de API · firewall · backups · logs básicos.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     12 · BUSINESS
+     ===================================================================== -->
+<section class="slide s-plan s-business" id="s12" data-chapter="3" data-ui="light" data-bar="dark" aria-label="Plan Business">
+  <div class="bg bg--drip"><svg class="drip drip--top" aria-hidden="true"><use href="#drip"/></svg></div>
+  <div class="stage">
+    <div class="plan-id">
+      <p class="kicker r"><b>03</b> Planes <i>/</i> Plan 02</p>
+      <h2 class="plan-name r" style="--i:1">Business</h2>
+      <p class="plan-claim r" style="--i:2">Convertí tu web en un canal de ventas.</p>
+      <div class="plan-meta r" style="--i:3">
+        <div><small>Inversión</small><b>USD 1.600</b></div>
+        <div><small>Plazo</small><b>3–4 semanas</b></div>
+      </div>
+      <div class="plan-ideal r" style="--i:4"><small>Ideal para</small><p>Transformar la web en un canal de ventas propio.</p></div>
+    </div>
+
+    <div class="plan-body">
+      <div class="equation r" style="--i:3" role="img" aria-label="Web más venta más pago más pedidos más administración">
+        <span>Web</span><i>+</i><span>Venta</span><i>+</i><span class="eq-hot">Pago</span><i>+</i><span>Pedidos</span><i>+</i><span>Administración</span>
+      </div>
+      <p class="plan-all r" style="--i:4"><b>Todo START</b>, más:</p>
+      <ul class="feats">
+        <li class="r" style="--i:5"><svg class="ic"><use href="#i-card"/></svg><span><b>Mercado Pago</b>Checkout y validación de pagos.</span></li>
+        <li class="r" style="--i:5"><svg class="ic"><use href="#i-receipt"/></svg><span><b>Pedidos propios</b>Sistema propio con estados de pedido.</span></li>
+        <li class="r" style="--i:6"><svg class="ic"><use href="#i-panel"/></svg><span><b>Dashboard profesional</b>Filtros, búsqueda e historial.</span></li>
+        <li class="r" style="--i:6"><svg class="ic"><use href="#i-chart"/></svg><span><b>Métricas profesionales</b>Ventas, pedidos y productos.</span></li>
+        <li class="r" style="--i:7"><svg class="ic"><use href="#i-users"/></svg><span><b>Clientes</b>Base de clientes propia.</span></li>
+        <li class="r" style="--i:7"><svg class="ic"><use href="#i-tag"/></svg><span><b>Promociones</b>Para mover la demanda.</span></li>
+        <li class="r" style="--i:8"><svg class="ic"><use href="#i-id"/></svg><span><b>Roles</b>Cada usuario ve lo que necesita.</span></li>
+        <li class="r" style="--i:8"><svg class="ic"><use href="#i-scooter"/></svg><span><b>Delivery</b>Gestión de envíos.</span></li>
+      </ul>
+      <p class="plan-sec r" style="--i:9"><svg class="ic"><use href="#i-shield"/></svg><span><b>Seguridad ampliada:</b> logs · backups · firewall · HTTPS · monitoreo básico.</span></p>
+    </div>
+    <span class="sticker-round r" style="--i:6" aria-hidden="true"><span>El punto<br>de<br>equilibrio</span></span>
+  </div>
+</section>
+
+<!-- =====================================================================
+     13 · PRO
+     ===================================================================== -->
+<section class="slide s-plan s-pro" id="s13" data-chapter="3" data-ui="dark" aria-label="Plan Pro">
+  <div class="bg"><div class="pro-glow"></div><span class="pro-ghost" aria-hidden="true">PRO</span></div>
+  <div class="stage">
+    <div class="plan-id">
+      <p class="kicker r"><b>03</b> Planes <i>/</i> Plan 03</p>
+      <h2 class="plan-name r" style="--i:1">Pro</h2>
+      <p class="plan-claim r" style="--i:2">Una plataforma digital para hacer crecer el negocio.</p>
+      <div class="plan-meta r" style="--i:3">
+        <div><small>Inversión</small><b>USD 3.200</b></div>
+        <div><small>Plazo</small><b>5–8 semanas</b></div>
+      </div>
+      <blockquote class="pro-quote r" style="--i:4">No es solamente una web. <strong>Es una plataforma de operación digital.</strong></blockquote>
+      <p class="plan-all r" style="--i:5"><b>Todo BUSINESS</b>, más infraestructura y seguridad avanzada.</p>
+    </div>
+
+    <ol class="eco" aria-label="Ecosistema PRO">
+      <li class="eco-n r" style="--i:2"><svg class="ic"><use href="#i-cart"/></svg><b>Ventas</b><small>Web + checkout</small></li>
+      <li class="eco-n r" style="--i:3"><svg class="ic"><use href="#i-receipt"/></svg><b>Pedidos</b><small>Seguimiento y notificaciones</small></li>
+      <li class="eco-n eco-n--hot r" style="--i:4"><svg class="ic"><use href="#i-flame"/></svg><b>Cocina</b><small>Panel de cocina</small></li>
+      <li class="eco-n r" style="--i:5"><svg class="ic"><use href="#i-scooter"/></svg><b>Delivery</b><small>Avanzado · cadetes · seguimiento</small></li>
+      <li class="eco-n r" style="--i:6"><svg class="ic"><use href="#i-users"/></svg><b>Clientes</b><small>Avanzados · segmentación</small></li>
+      <li class="eco-n r" style="--i:7"><svg class="ic"><use href="#i-star"/></svg><b>Fidelización</b><small>Puntos · recompensas · cupones · campañas</small></li>
+      <li class="eco-n r" style="--i:8"><svg class="ic"><use href="#i-box"/></svg><b>Stock</b><small>Insumos · alertas · compras · proveedores</small></li>
+      <li class="eco-n r" style="--i:9"><svg class="ic"><use href="#i-id"/></svg><b>Empleados</b><small>Roles avanzados · auditoría</small></li>
+      <li class="eco-n eco-n--y r" style="--i:10"><svg class="ic"><use href="#i-trend"/></svg><b>Analytics</b><small>Avanzado · proyecciones con históricos</small></li>
+    </ol>
+
+    <div class="pro-mascot r" style="--i:3" data-parallax="14">
+      <img src="images/mascota-paracaidas.webp" alt="La mascota de Maldita Smash aterrizando en paracaídas" width="571" height="925" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     14 · COMPARACIÓN
+     ===================================================================== -->
+<section class="slide s-compare" id="s14" data-chapter="3" data-ui="dark" aria-label="Comparación de planes">
+  <div class="stage">
+    <header class="compare-head">
+      <p class="kicker r"><b>03</b> Planes <i>/</i> Comparación</p>
+      <h2 class="t-h2 r" style="--i:1">La diferencia, <span class="hl-y">de un vistazo.</span></h2>
+      <p class="compare-legend r" style="--i:2" aria-hidden="true"><span><i class="lv lv-1"></i>Básico</span><span><i class="lv lv-2"></i>Profesional / completo</span><span><i class="lv lv-3"></i>Avanzado</span></p>
+    </header>
+
+    <div class="compare">
+      <table class="cmp r" style="--i:2">
+        <caption class="sr-only">Comparación de funcionalidades — experiencia y venta</caption>
+        <thead><tr><th scope="col"><span class="sr-only">Funcionalidad</span></th><th scope="col">Start</th><th scope="col" class="is-feat">Business</th><th scope="col">Pro</th></tr></thead>
+        <tbody>
+          <tr class="cmp-group"><th scope="rowgroup" colspan="4">Experiencia</th></tr>
+          <tr><th scope="row">Web personalizada</th><td><i class="ok">✓</i></td><td class="is-feat"><i class="ok">✓</i></td><td><i class="ok">✓</i></td></tr>
+          <tr><th scope="row">Menú digital</th><td><i class="ok">✓</i></td><td class="is-feat"><i class="ok">✓</i></td><td><i class="ok">✓</i></td></tr>
+          <tr><th scope="row">Carrito</th><td><i class="lv lv-1"></i>Básico</td><td class="is-feat"><i class="lv lv-2"></i>Completo</td><td><i class="lv lv-2"></i>Completo</td></tr>
+          <tr class="cmp-group"><th scope="rowgroup" colspan="4">Venta</th></tr>
+          <tr><th scope="row">Pedidos</th><td><i class="lv lv-1"></i>WhatsApp</td><td class="is-feat"><i class="lv lv-2"></i>Sistema propio</td><td><i class="lv lv-3"></i>Sistema completo</td></tr>
+          <tr><th scope="row">Mercado Pago</th><td><i class="no">—</i></td><td class="is-feat"><i class="ok">✓</i></td><td><i class="ok">✓</i></td></tr>
+          <tr><th scope="row">Promociones</th><td><i class="no">—</i></td><td class="is-feat"><i class="lv lv-1"></i>Básicas</td><td><i class="lv lv-3"></i>Avanzadas</td></tr>
+          <tr><th scope="row">Cupones</th><td><i class="no">—</i></td><td class="is-feat"><i class="no">—</i></td><td><i class="ok">✓</i></td></tr>
+          <tr><th scope="row">Fidelización</th><td><i class="no">—</i></td><td class="is-feat"><i class="no">—</i></td><td><i class="ok">✓</i></td></tr>
+        </tbody>
+      </table>
+      <table class="cmp r" style="--i:3">
+        <caption class="sr-only">Comparación de funcionalidades — gestión y operación</caption>
+        <thead><tr><th scope="col"><span class="sr-only">Funcionalidad</span></th><th scope="col">Start</th><th scope="col" class="is-feat">Business</th><th scope="col">Pro</th></tr></thead>
+        <tbody>
+          <tr class="cmp-group"><th scope="rowgroup" colspan="4">Gestión</th></tr>
+          <tr><th scope="row">Panel administrativo</th><td><i class="lv lv-1"></i>Básico</td><td class="is-feat"><i class="lv lv-2"></i>Profesional</td><td><i class="lv lv-3"></i>Avanzado</td></tr>
+          <tr><th scope="row">Métricas</th><td><i class="lv lv-1"></i>Básicas</td><td class="is-feat"><i class="lv lv-2"></i>Profesionales</td><td><i class="lv lv-3"></i>Avanzadas</td></tr>
+          <tr><th scope="row">Clientes</th><td><i class="no">—</i></td><td class="is-feat"><i class="lv lv-1"></i>Básico</td><td><i class="lv lv-2"></i>Completo</td></tr>
+          <tr><th scope="row">Empleados</th><td><i class="lv lv-1"></i>Básico</td><td class="is-feat"><i class="lv lv-1"></i>Básico</td><td><i class="lv lv-2"></i>Completo</td></tr>
+          <tr><th scope="row">Auditoría</th><td><i class="lv lv-1"></i>Básica</td><td class="is-feat"><i class="ok">✓</i></td><td><i class="lv lv-3"></i>Avanzada</td></tr>
+          <tr class="cmp-group"><th scope="rowgroup" colspan="4">Operación</th></tr>
+          <tr><th scope="row">Delivery</th><td><i class="lv lv-1"></i>Básico</td><td class="is-feat"><i class="lv lv-2"></i>Gestión</td><td><i class="lv lv-3"></i>Avanzado</td></tr>
+          <tr><th scope="row">Cocina</th><td><i class="no">—</i></td><td class="is-feat"><i class="no">—</i></td><td><i class="ok">✓</i></td></tr>
+          <tr><th scope="row">Stock</th><td><i class="no">—</i></td><td class="is-feat"><i class="no">—</i></td><td><i class="ok">✓</i></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="compare-foot r" style="--i:4">
+      <span><b>Start</b>USD 800</span>
+      <span class="is-feat"><b>Business</b>USD 1.600 <em>Recomendado</em></span>
+      <span><b>Pro</b>USD 3.200</span>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     15 · COCINA (PRO)
+     ===================================================================== -->
+<section class="slide s-kitchen" id="s15" data-chapter="4" data-ui="dark" aria-label="Panel de cocina">
+  <div class="stage">
+    <div class="mod-copy">
+      <p class="kicker r"><b>04</b> Pro <i>/</i> Cocina</p>
+      <h2 class="t-h1 r" style="--i:1">Cada pedido, <span class="hl-y">directo a la cocina.</span></h2>
+      <p class="t-body r" style="--i:2">Los pedidos llegan ordenados por estado y por tiempo. La cocina sabe qué preparar primero; el mostrador sabe qué está listo para salir.</p>
+      <div class="tags r" style="--i:3"><span class="tag tag--pro">Plan Pro</span><span class="tag tag--concept">Concepto</span></div>
+    </div>
+
+    <figure class="tablet kitchen r" style="--i:2" role="img" aria-label="Concepto de panel de cocina con tres columnas: nuevos, en preparación y listos, con tarjetas de pedidos">
+      <div class="tablet-screen" aria-hidden="true">
+        <div class="kb-top"><span class="kb-brand"><img src="images/logo-mark-red-sm.webp" alt="">Cocina</span><span class="kb-clock"><svg class="ic"><use href="#i-clock"/></svg>12:46</span></div>
+        <div class="kb">
+          <div class="kb-col">
+            <p class="kb-h kb-h--new">Nuevos <em>2</em></p>
+            <div class="ko ko--new"><div class="ko-top"><b>#1042</b><span>12:42</span></div><ul><li>Doble Bacon <i>x2</i></li><li>Papas Cheddar <i>x1</i></li><li>Coca-Cola <i>x2</i></li></ul><span class="ko-btn">Preparar</span></div>
+            <div class="ko ko--new"><div class="ko-top"><b>#1043</b><span>12:44</span></div><ul><li>Triple Smash <i>x1</i></li><li>Papas <i>x1</i></li></ul><span class="ko-btn">Preparar</span></div>
+          </div>
+          <div class="kb-col">
+            <p class="kb-h kb-h--prep">En preparación <em>2</em></p>
+            <div class="ko ko--prep"><div class="ko-top"><b>#1039</b><span class="ko-timer">06:12</span></div><ul><li>Doble Smash <i>x3</i></li><li>Papas Cheddar <i>x2</i></li></ul><span class="ko-btn">Marcar listo</span></div>
+            <div class="ko ko--prep"><div class="ko-top"><b>#1040</b><span class="ko-timer">03:40</span></div><ul><li>Bacon Maldito <i>x1</i></li><li>Coca-Cola <i>x1</i></li></ul><span class="ko-btn">Marcar listo</span></div>
+          </div>
+          <div class="kb-col">
+            <p class="kb-h kb-h--ok">Listos <em>1</em></p>
+            <div class="ko ko--ok"><div class="ko-top"><b>#1037</b><span>Delivery</span></div><ul><li>Doble Smash <i>x2</i></li><li>Papas <i>x2</i></li></ul><span class="ko-btn">Entregar</span></div>
+          </div>
+        </div>
+      </div>
+    </figure>
+    <img class="kitchen-mascot r" style="--i:5" src="images/mascota-rebelde.webp" alt="" width="576" height="803" loading="lazy">
+  </div>
+</section>
+
+<!-- =====================================================================
+     16 · DELIVERY
+     ===================================================================== -->
+<section class="slide s-delivery" id="s16" data-chapter="4" data-ui="light" aria-label="Delivery y seguimiento">
+  <div class="bg"><div class="orange-light"></div><div class="map-lines"></div></div>
+  <div class="stage">
+    <div class="mod-copy">
+      <p class="kicker r"><b>04</b> Pro <i>/</i> Delivery</p>
+      <h2 class="t-h1 r" style="--i:1">Del mostrador <span class="hl-box">a la puerta.</span></h2>
+      <p class="t-body r" style="--i:2">El cliente sabe en qué está su pedido. El local sabe qué cadete lo lleva.</p>
+      <div class="levels r" style="--i:3">
+        <p><b>Start</b>Delivery básico en el pedido.</p>
+        <p><b>Business</b>Gestión de envíos.</p>
+        <p class="is-on"><b>Pro</b>Delivery avanzado, cadetes y seguimiento.</p>
+      </div>
+      <p class="note r" style="--i:4"><svg class="ic"><use href="#i-map"/></svg><span>El seguimiento en vivo y los mapas dependen de la implementación y de integraciones externas (mapas, geolocalización), que pueden tener costos propios.</span></p>
+    </div>
+
+    <figure class="phone track-phone r" style="--i:2" role="img" aria-label="Concepto de seguimiento de pedido 1042: confirmado, preparando, listo y en camino">
+      <div class="phone-screen" aria-hidden="true">
+        <div class="ph-status"><span>13:03</span><span class="ph-notch"></span><span>●●●</span></div>
+        <div class="app app--track">
+          <div class="tr-map">
+            <svg viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice"><path class="tr-streets" d="M0 30H200M0 75H200M0 105H200M40 0V120M95 0V120M150 0V120M0 0L200 120"/><path class="tr-route" d="M28 98 L40 75 L95 75 L95 30 L150 30 L170 18"/><circle class="tr-dot" cx="95" cy="52" r="6"/><circle class="tr-home" cx="170" cy="18" r="5"/></svg>
+          </div>
+          <b class="tr-id">Pedido #1042</b>
+          <ul class="tr-steps">
+            <li class="done"><i><svg class="ic"><use href="#i-check"/></svg></i><span>Confirmado</span><em>12:42</em></li>
+            <li class="done"><i><svg class="ic"><use href="#i-check"/></svg></i><span>Preparando</span><em>12:45</em></li>
+            <li class="done"><i><svg class="ic"><use href="#i-check"/></svg></i><span>Listo</span><em>12:58</em></li>
+            <li class="now"><i><svg class="ic"><use href="#i-scooter"/></svg></i><span>En camino</span><em>13:02</em></li>
+            <li><i></i><span>Entregado</span><em>—</em></li>
+          </ul>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="riders r" style="--i:4" role="img" aria-label="Concepto de panel de cadetes">
+      <div aria-hidden="true">
+        <p class="riders-h"><svg class="ic"><use href="#i-scooter"/></svg>Cadetes</p>
+        <div class="rd"><span class="rd-av">C1</span><span><b>Cadete 01</b><small>En camino · #1042</small></span><i class="rd-st rd-st--go"></i></div>
+        <div class="rd"><span class="rd-av">C2</span><span><b>Cadete 02</b><small>Retirando · #1037</small></span><i class="rd-st rd-st--wait"></i></div>
+        <div class="rd"><span class="rd-av">C3</span><span><b>Cadete 03</b><small>Disponible</small></span><i class="rd-st"></i></div>
+      </div>
+      <span class="tag tag--dark">Concepto</span>
+    </figure>
+  </div>
+</section>
+
+<!-- =====================================================================
+     17 · CLIENTES + FIDELIZACIÓN
+     ===================================================================== -->
+<section class="slide s-crm" id="s17" data-chapter="4" data-ui="dark" aria-label="Clientes y fidelización">
+  <div class="stage">
+    <div class="mod-copy">
+      <p class="kicker r"><b>04</b> Pro <i>/</i> Clientes + fidelización</p>
+      <h2 class="t-h1 r" style="--i:1">Clientes que <span class="hl-y">vuelven.</span></h2>
+      <p class="t-body r" style="--i:2">Saber quién compra, qué prefiere y cuándo volvió por última vez. Y darle motivos para volver: puntos, recompensas, cupones y campañas por segmento.</p>
+      <div class="levels r" style="--i:3">
+        <p><b>Business</b>Clientes: base propia.</p>
+        <p class="is-on"><b>Pro</b>Clientes avanzados, segmentación y fidelización.</p>
+      </div>
+      <div class="tags r" style="--i:4"><span class="tag tag--pro">Plan Pro</span><span class="tag tag--concept">Concepto / ejemplo visual</span></div>
+    </div>
+
+    <div class="crm-stack">
+      <figure class="crm-card r" style="--i:2" role="img" aria-label="Ejemplo visual de ficha de cliente: Pedro, 12 pedidos, 183.000 pesos acumulados, última compra 04/10, favorito Doble Bacon">
+        <div aria-hidden="true">
+          <div class="crm-top"><span class="crm-av">P</span><span><small>Cliente</small><b>Pedro</b></span><span class="crm-chip">Frecuente</span></div>
+          <div class="crm-stats">
+            <p><b>12</b><small>pedidos</small></p>
+            <p><b>$183.000</b><small>acumulados</small></p>
+          </div>
+          <div class="crm-rows">
+            <p><small>Última compra</small><b>04/10</b></p>
+            <p><small>Favorito</small><b>Doble Bacon</b></p>
+          </div>
+          <div class="crm-hist"><i style="--h:40%"></i><i style="--h:55%"></i><i style="--h:35%"></i><i style="--h:70%"></i><i style="--h:45%"></i><i style="--h:60%"></i><i style="--h:85%"></i><i style="--h:50%"></i><i style="--h:65%"></i><i style="--h:75%"></i><i style="--h:55%"></i><i style="--h:95%"></i></div>
+          <small class="crm-hist-l">Pedidos de los últimos 12 meses</small>
+        </div>
+      </figure>
+
+      <figure class="loyal r" style="--i:4" role="img" aria-label="Ejemplo visual de tarjeta de fidelización: 1.240 puntos, próxima recompensa Papas Cheddar">
+        <div aria-hidden="true">
+          <div class="loyal-top"><span>Fidelización</span><img src="images/logo-mark-red-sm.webp" alt=""></div>
+          <b class="loyal-pts"><span data-count="1240">1.240</span> <small>puntos</small></b>
+          <div class="loyal-bar"><i style="--p:83%"></i></div>
+          <p class="loyal-next"><small>Próxima recompensa</small><b>Papas Cheddar</b></p>
+        </div>
+      </figure>
+
+      <figure class="coupon r" style="--i:5" role="img" aria-label="Ejemplo visual de cupón de descuento">
+        <div aria-hidden="true"><svg class="ic"><use href="#i-ticket"/></svg><span><b>−10%</b><small>Cupón · segmento “frecuentes”</small></span><em>EJEMPLO</em></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     18 · STOCK
+     ===================================================================== -->
+<section class="slide s-stock" id="s18" data-chapter="4" data-ui="dark" aria-label="Stock e inventario">
+  <div class="stage">
+    <div class="mod-copy">
+      <p class="kicker r"><b>04</b> Pro <i>/</i> Stock</p>
+      <h2 class="t-h1 r" style="--i:1">Stock que <span class="hl-y">avisa antes.</span></h2>
+      <p class="t-body r" style="--i:2">Cada producto se vincula con sus insumos. Al vender, el inventario se actualiza y el sistema avisa cuando algo baja del mínimo, para comprar a tiempo y a quien corresponde.</p>
+      <ul class="mini-feats r" style="--i:3"><li>Insumos</li><li>Alertas</li><li>Compras</li><li>Proveedores</li></ul>
+      <div class="tags r" style="--i:4"><span class="tag tag--pro">Plan Pro</span><span class="tag tag--concept">Datos ilustrativos</span></div>
+    </div>
+
+    <figure class="stock-panel r" style="--i:2" role="img" aria-label="Concepto de panel de stock: bacon con stock bajo, 1,2 kilos sobre un mínimo de 3 kilos">
+      <div aria-hidden="true">
+        <p class="sp-h"><span><svg class="ic"><use href="#i-box"/></svg>Stock · insumos</span><em>Hoy</em></p>
+        <div class="sp-row"><span>Carne</span><span class="sp-bar"><i style="--p:78%"></i></span><b>18 kg</b></div>
+        <div class="sp-row"><span>Pan</span><span class="sp-bar"><i style="--p:64%"></i></span><b>140 u</b></div>
+        <div class="sp-row"><span>Cheddar</span><span class="sp-bar"><i style="--p:52%"></i></span><b>6,5 kg</b></div>
+        <div class="sp-row is-low"><span>Bacon</span><span class="sp-bar"><i style="--p:28%"></i><u style="--m:70%"></u></span><b>1,2 kg</b></div>
+        <div class="sp-row"><span>Papas</span><span class="sp-bar"><i style="--p:70%"></i></span><b>25 kg</b></div>
+        <div class="sp-alert"><svg class="ic"><use href="#i-alert"/></svg><span><b>Stock bajo · Bacon</b>1,2 kg · mínimo 3 kg</span><em>Generar compra</em></div>
+      </div>
+    </figure>
+
+    <figure class="recipe r" style="--i:4" role="img" aria-label="Concepto de receta: Doble Bacon usa carne x2, pan x1, cheddar x2 y bacon x2">
+      <div aria-hidden="true">
+        <p class="rc-h"><small>Receta</small><b>Doble Bacon</b></p>
+        <ul>
+          <li><span>Carne</span><i>x2</i></li>
+          <li><span>Pan</span><i>x1</i></li>
+          <li><span>Cheddar</span><i>x2</i></li>
+          <li class="is-low"><span>Bacon</span><i>x2</i></li>
+        </ul>
+        <p class="rc-f">1 venta <svg class="ic"><use href="#i-arrow-r"/></svg> descuenta insumos</p>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- =====================================================================
+     19 · ANALYTICS
+     ===================================================================== -->
+<section class="slide s-analytics" id="s19" data-chapter="4" data-ui="dark" aria-label="Analytics">
+  <div class="stage">
+    <header class="an-head">
+      <div>
+        <p class="kicker r"><b>04</b> Pro <i>/</i> Analytics</p>
+        <h2 class="t-h2 r" style="--i:1">Los números del negocio, <span class="hl-y">en una pantalla.</span></h2>
+      </div>
+      <div class="tags r" style="--i:2"><span class="tag tag--pro">Plan Pro</span><span class="tag tag--warn">Datos ilustrativos</span></div>
+    </header>
+
+    <figure class="dash r" style="--i:2" aria-label="Concepto de dashboard con datos ilustrativos, no reales">
+      <div class="kpis">
+        <div class="kpi kpi--main">
+          <small>Ventas · 30 días</small>
+          <b><span class="cur">$</span> <span data-count="2840000">2.840.000</span></b>
+          <span class="delta"><svg class="ic" aria-hidden="true"><use href="#i-trend"/></svg>+18,4% <em>vs. período anterior</em></span>
+        </div>
+        <div class="kpi"><small>Pedidos</small><b data-count="1284">1.284</b></div>
+        <div class="kpi"><small>Ticket promedio</small><b><span class="cur">$</span> <span data-count="2212">2.212</span></b></div>
+        <div class="kpi kpi--top"><small>#1 producto</small><b class="kpi-txt">Bacon Smash</b></div>
+      </div>
+
+      <div class="charts">
+        <div class="chart chart--line">
+          <p class="chart-h">Ventas diarias <em>últimos 30 días</em></p>
+          <div class="line-wrap">
+            <svg viewBox="0 0 600 200" preserveAspectRatio="none" class="line-svg" role="img" aria-label="Línea de ventas diarias ilustrativa, con picos los fines de semana y tendencia creciente">
+              <g class="grid"><path d="M0 50H600M0 100H600M0 150H600"/></g>
+              <defs><linearGradient id="area-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCC302" stop-opacity=".32"/><stop offset="1" stop-color="#FCC302" stop-opacity="0"/></linearGradient></defs>
+              <path class="area" d="M0.0 127.6 L20.7 136.6 L41.4 118.3 L62.1 112.3 L82.8 70.6 L103.4 38.0 L124.1 64.7 L144.8 126.5 L165.5 136.4 L186.2 119.7 L206.9 113.8 L227.6 77.0 L248.3 44.7 L269.0 62.6 L289.7 127.8 L310.3 136.3 L331.0 118.1 L351.7 105.0 L372.4 61.0 L393.1 26.6 L413.8 44.7 L434.5 116.0 L455.2 120.8 L475.9 103.4 L496.6 96.0 L517.2 54.4 L537.9 20.0 L558.6 40.5 L579.3 112.1 L600.0 119.0 L600 200 L0 200Z" fill="url(#area-g)"/>
+              <path class="line" pathLength="1" d="M0.0 127.6 L20.7 136.6 L41.4 118.3 L62.1 112.3 L82.8 70.6 L103.4 38.0 L124.1 64.7 L144.8 126.5 L165.5 136.4 L186.2 119.7 L206.9 113.8 L227.6 77.0 L248.3 44.7 L269.0 62.6 L289.7 127.8 L310.3 136.3 L331.0 118.1 L351.7 105.0 L372.4 61.0 L393.1 26.6 L413.8 44.7 L434.5 116.0 L455.2 120.8 L475.9 103.4 L496.6 96.0 L517.2 54.4 L537.9 20.0 L558.6 40.5 L579.3 112.1 L600.0 119.0"/>
+            </svg>
+            <span class="line-peak" style="left:89.6%;top:10%">Pico de sábado</span>
+            <div class="line-hover" aria-hidden="true"><span class="lh-line"></span><span class="lh-tip"></span></div>
+          </div>
+          <p class="axis"><span>Día 1</span><span>Día 15</span><span>Día 30</span></p>
+        </div>
+
+        <div class="chart chart--bars">
+          <p class="chart-h">Pedidos por hora <em>promedio</em></p>
+          <div class="hbars">
+            <i style="--n:0;--h:18%" data-tip="12 h"></i><i style="--n:1;--h:34%" data-tip="13 h"></i><i style="--n:2;--h:28%" data-tip="14 h"></i><i style="--n:3;--h:12%" data-tip="15 h"></i><i style="--n:4;--h:8%" data-tip="16 h"></i><i style="--n:5;--h:10%" data-tip="17 h"></i><i style="--n:6;--h:16%" data-tip="18 h"></i><i style="--n:7;--h:30%" data-tip="19 h"></i><i style="--n:8;--h:58%" data-tip="20 h"></i><i style="--n:9;--h:86%" data-tip="21 h"></i><i class="is-max" style="--n:10;--h:100%" data-tip="22 h · pico"></i><i style="--n:11;--h:74%" data-tip="23 h"></i><i style="--n:12;--h:40%" data-tip="00 h"></i>
+          </div>
+          <p class="axis"><span>12 h</span><span>18 h</span><span>00 h</span></p>
+        </div>
+
+        <div class="chart chart--rank">
+          <p class="chart-h">Productos más vendidos</p>
+          <ol class="rank">
+            <li><span>Bacon Smash</span><i style="--p:100%"></i><b>312</b></li>
+            <li><span>Doble Smash</span><i style="--p:84%"></i><b>262</b></li>
+            <li><span>Papas Cheddar</span><i style="--p:66%"></i><b>206</b></li>
+            <li><span>Triple Smash</span><i style="--p:41%"></i><b>128</b></li>
+          </ol>
+        </div>
+      </div>
+    </figure>
+    <p class="footnote r" style="--i:4">Todas las cifras son ilustrativas y no representan datos reales de Maldita Smash. Las proyecciones basadas en históricos forman parte del plan PRO.</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     20 · TECNOLOGÍA
+     ===================================================================== -->
+<section class="slide s-tech" id="s20" data-chapter="5" data-ui="light" aria-label="Tecnología">
+  <div class="stage">
+    <header class="tech-head">
+      <p class="kicker r"><b>05</b> Tecnología <i>/</i> La base técnica</p>
+      <h2 class="t-h1 r" style="--i:1">Tecnología sólida, <span class="hl-r">sin vueltas.</span></h2>
+      <p class="t-lead r" style="--i:2">La arquitectura se adapta al alcance de cada propuesta, priorizando velocidad, seguridad y capacidad de evolución.</p>
+    </header>
+
+    <div class="stack">
+      <article class="layer r" style="--i:3">
+        <span class="layer-n">01</span><svg class="ic"><use href="#i-phone"/></svg>
+        <h3>Frontend</h3>
+        <p class="layer-d">Lo que ve y toca el cliente: la web, el menú y el panel.</p>
+        <ul><li>TypeScript</li><li><b>Angular</b> en Business / Pro</li><li><b>Web Components</b> + TypeScript en Start</li></ul>
+      </article>
+      <article class="layer r" style="--i:4">
+        <span class="layer-n">02</span><svg class="ic"><use href="#i-code"/></svg>
+        <h3>Backend</h3>
+        <p class="layer-d">La lógica del negocio: pedidos, pagos, usuarios y reglas.</p>
+        <ul><li>Node.js</li><li>Express</li><li>TypeScript</li></ul>
+      </article>
+      <article class="layer r" style="--i:5">
+        <span class="layer-n">03</span><svg class="ic"><use href="#i-db"/></svg>
+        <h3>Database</h3>
+        <p class="layer-d">Los datos del negocio, ordenados y respaldados.</p>
+        <ul><li>MySQL</li></ul>
+      </article>
+      <article class="layer layer--k r" style="--i:6">
+        <span class="layer-n">04</span><svg class="ic"><use href="#i-server"/></svg>
+        <h3>Infraestructura</h3>
+        <p class="layer-d">Dónde vive la plataforma y cómo se protege.</p>
+        <ul><li>Linux</li><li>Docker</li><li>HTTPS</li><li>Backups</li></ul>
+      </article>
+    </div>
+
+    <div class="tech-flow r" style="--i:7" aria-hidden="true">
+      <span>Cliente</span><i></i><span>Frontend</span><i></i><span>API</span><i></i><span>Base de datos</span><i></i><span class="tf-k">Servidor seguro</span>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     21 · METODOLOGÍA
+     ===================================================================== -->
+<section class="slide s-method" id="s21" data-chapter="5" data-ui="dark" aria-label="Metodología">
+  <div class="stage">
+    <header class="method-head">
+      <p class="kicker r"><b>05</b> Tecnología <i>/</i> Metodología</p>
+      <h2 class="t-h1 r" style="--i:1">Cómo lo <span class="hl-y">construimos.</span></h2>
+    </header>
+
+    <ol class="timeline">
+      <li class="tl r" style="--i:2"><span class="tl-n">01</span><h3>Descubrimiento</h3><p>Entendemos el negocio, la operación y los objetivos. Definimos el alcance.</p><em class="tl-pay">Inicio del proyecto</em></li>
+      <li class="tl r" style="--i:3"><span class="tl-n">02</span><h3>Diseño</h3><p>Llevamos la identidad a pantallas: flujos, componentes y estilo visual.</p></li>
+      <li class="tl r" style="--i:4"><span class="tl-n">03</span><h3>Desarrollo</h3><p>Construimos por etapas, con versiones que se pueden ver y probar.</p><em class="tl-pay">Versión funcional</em></li>
+      <li class="tl r" style="--i:5"><span class="tl-n">04</span><h3>Pruebas</h3><p>Pedidos, pagos, permisos y dispositivos, revisados antes de salir.</p></li>
+      <li class="tl r" style="--i:6"><span class="tl-n">05</span><h3>Producción</h3><p>Publicación con HTTPS, base de datos y backups configurados.</p></li>
+      <li class="tl tl--hot r" style="--i:7"><span class="tl-n">06</span><h3>Entrega</h3><p>Plataforma publicada, accesos al panel y traspaso del proyecto.</p><em class="tl-pay">Publicación</em></li>
+    </ol>
+    <p class="method-note r" style="--i:8"><i></i>Los hitos de pago acompañan avances concretos: se avanza y se paga contra versiones que se pueden ver.</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     22 · PLAZOS
+     ===================================================================== -->
+<section class="slide s-time" id="s22" data-chapter="5" data-ui="light" aria-label="Plazos">
+  <div class="stage">
+    <header class="time-head">
+      <p class="kicker r"><b>05</b> Tecnología <i>/</i> Plazos</p>
+      <h2 class="t-mega r" style="--i:1">Plazos claros.</h2>
+    </header>
+
+    <div class="gantt" role="img" aria-label="Plazos aproximados: Start 15 días hábiles, Business 3 a 4 semanas, Pro 5 a 8 semanas">
+      <div class="g-axis" aria-hidden="true"><span>Sem 1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+      <div class="g-row r" style="--i:2" aria-hidden="true"><b class="g-name">Start</b><span class="g-bar" style="--s:0;--e:3;--x:3"><em>15 días hábiles aprox.</em></span><span class="g-lbl">15 días hábiles aprox.</span></div>
+      <div class="g-row r" style="--i:3" aria-hidden="true"><b class="g-name">Business</b><span class="g-bar g-bar--k" style="--s:0;--e:3;--x:4"><em>3–4 semanas aprox.</em></span><span class="g-lbl">3–4 semanas aprox.</span></div>
+      <div class="g-row r" style="--i:4" aria-hidden="true"><b class="g-name">Pro</b><span class="g-bar g-bar--r" style="--s:0;--e:5;--x:8"><em>5–8 semanas aprox.</em></span><span class="g-lbl">5–8 semanas aprox.</span></div>
+    </div>
+
+    <div class="time-notes">
+      <p class="r" style="--i:5"><svg class="ic"><use href="#i-clock"/></svg>Los plazos comienzan una vez recibido el material necesario y confirmado el alcance.</p>
+      <p class="r" style="--i:6"><svg class="ic"><use href="#i-alert"/></svg>Pueden variar ante cambios importantes de alcance o dependencias de servicios externos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     23 · INVERSIÓN
+     ===================================================================== -->
+<section class="slide s-invest" id="s23" data-chapter="6" data-ui="dark" aria-label="Inversión">
+  <div class="stage">
+    <header class="invest-head">
+      <p class="kicker r"><b>06</b> Inversión</p>
+      <h2 class="t-h1 r" style="--i:1">La inversión.</h2>
+      <p class="t-lead r" style="--i:2">Un precio cerrado por plan, con pagos repartidos en etapas del proyecto.</p>
+    </header>
+
+    <div class="prices">
+      <article class="price r" style="--i:3">
+        <h3>Start</h3>
+        <p class="price-d">Tu marca, tu menú y tus pedidos online.</p>
+        <p class="price-v"><small>USD</small><b>800</b></p>
+        <div class="split" aria-hidden="true"><i style="--w:50"></i><i style="--w:30"></i><i style="--w:20"></i></div>
+        <ul class="pay">
+          <li><b>50%</b><span>Al comenzar</span><em>USD 400</em></li>
+          <li><b>30%</b><span>Versión funcional</span><em>USD 240</em></li>
+          <li><b>20%</b><span>Publicación</span><em>USD 160</em></li>
+        </ul>
+      </article>
+      <article class="price price--feat r" style="--i:4">
+        <span class="price-badge">Recomendado</span>
+        <h3>Business</h3>
+        <p class="price-d">Tu web convertida en un canal de ventas propio.</p>
+        <p class="price-v"><small>USD</small><b>1.600</b></p>
+        <div class="split" aria-hidden="true"><i style="--w:40"></i><i style="--w:30"></i><i style="--w:20"></i><i style="--w:10"></i></div>
+        <ul class="pay">
+          <li><b>40%</b><span>Al comenzar</span><em>USD 640</em></li>
+          <li><b>30%</b><span>Versión funcional</span><em>USD 480</em></li>
+          <li><b>20%</b><span>Etapa final</span><em>USD 320</em></li>
+          <li><b>10%</b><span>Publicación</span><em>USD 160</em></li>
+        </ul>
+      </article>
+      <article class="price price--pro r" style="--i:5">
+        <h3>Pro</h3>
+        <p class="price-d">La operación completa en una sola plataforma.</p>
+        <p class="price-v"><small>USD</small><b>3.200</b></p>
+        <div class="split" aria-hidden="true"><i style="--w:40"></i><i style="--w:30"></i><i style="--w:20"></i><i style="--w:10"></i></div>
+        <ul class="pay">
+          <li><b>40%</b><span>Al comenzar</span><em>USD 1.280</em></li>
+          <li><b>30%</b><span>Primera versión funcional</span><em>USD 960</em></li>
+          <li><b>20%</b><span>Etapa final</span><em>USD 640</em></li>
+          <li><b>10%</b><span>Publicación</span><em>USD 320</em></li>
+        </ul>
+      </article>
+    </div>
+    <p class="footnote r" style="--i:6">Valores en dólares estadounidenses. No incluyen costos recurrentes de servicios de terceros (ver página siguiente).</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     24 · COSTOS EXTERNOS + MANTENIMIENTO
+     ===================================================================== -->
+<section class="slide s-extras" id="s24" data-chapter="6" data-ui="light" aria-label="Costos externos y mantenimiento">
+  <div class="stage">
+    <header class="extras-head">
+      <p class="kicker r"><b>06</b> Inversión <i>/</i> Transparencia</p>
+      <h2 class="t-h1 r" style="--i:1">Sin letra chica.</h2>
+    </header>
+
+    <div class="extras">
+      <article class="ex r" style="--i:2">
+        <p class="ex-k">Infraestructura y costos externos</p>
+        <h3>Lo que corre por fuera del desarrollo</h3>
+        <p>El desarrollo contempla la configuración inicial necesaria. Los servicios de terceros pueden generar costos recurrentes independientes, que no están incluidos salvo indicación expresa.</p>
+        <ul class="chips">
+          <li><svg class="ic"><use href="#i-globe"/></svg>Dominio</li>
+          <li><svg class="ic"><use href="#i-server"/></svg>Hosting / servidor</li>
+          <li><svg class="ic"><use href="#i-mail"/></svg>Email</li>
+          <li><svg class="ic"><use href="#i-card"/></svg>Mercado Pago</li>
+          <li><svg class="ic"><use href="#i-chat"/></svg>WhatsApp Business / API</li>
+          <li><svg class="ic"><use href="#i-map"/></svg>Mapas</li>
+          <li><svg class="ic"><use href="#i-pin"/></svg>Geolocalización</li>
+          <li><svg class="ic"><use href="#i-plug"/></svg>Otros servicios</li>
+        </ul>
+        <p class="ex-promise"><svg class="ic"><use href="#i-check"/></svg>Siempre te informamos antes de contratar cualquier servicio.</p>
+      </article>
+
+      <article class="ex ex--k r" style="--i:3">
+        <p class="ex-k">Mantenimiento · opcional</p>
+        <h3>Después del lanzamiento</h3>
+        <p>Una vez entregado el proyecto, se puede contratar mantenimiento mensual para que la plataforma siga en forma.</p>
+        <ul class="chips chips--dark">
+          <li><svg class="ic"><use href="#i-refresh"/></svg>Actualizaciones</li>
+          <li><svg class="ic"><use href="#i-db"/></svg>Backups</li>
+          <li><svg class="ic"><use href="#i-activity"/></svg>Monitoreo</li>
+          <li><svg class="ic"><use href="#i-shield"/></svg>Seguridad</li>
+          <li><svg class="ic"><use href="#i-wrench"/></svg>Correcciones</li>
+          <li><svg class="ic"><use href="#i-headset"/></svg>Soporte</li>
+          <li><svg class="ic"><use href="#i-server"/></svg>Infraestructura</li>
+          <li><svg class="ic"><use href="#i-sparkle"/></svg>Pequeñas mejoras</li>
+        </ul>
+        <p class="ex-promise"><svg class="ic"><use href="#i-plus"/></svg>Las nuevas funcionalidades se presupuestan por separado.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     25 · EVOLUCIÓN
+     ===================================================================== -->
+<section class="slide s-evo" id="s25" data-chapter="7" data-ui="dark" aria-label="Evolución">
+  <div class="stage">
+    <header class="evo-head">
+      <p class="kicker r"><b>07</b> Evolución</p>
+      <h2 class="t-h1 r" style="--i:1">No hay que <span class="hl-y">empezar de cero.</span></h2>
+      <p class="t-lead r" style="--i:2">La plataforma puede crecer junto al negocio. Cada etapa se construye sobre la anterior.</p>
+    </header>
+
+    <ol class="evo">
+      <li class="ev ev-1 r" style="--i:3">
+        <p class="ev-when">Hoy</p><h3>Start</h3>
+        <ul><li>Web</li><li>Menú</li><li>Carrito</li><li>WhatsApp</li></ul>
+      </li>
+      <li class="ev ev-2 r" style="--i:5">
+        <p class="ev-when">Mañana</p><h3>Business</h3>
+        <ul><li>Venta online</li><li>Mercado Pago</li><li>Pedidos</li><li>Clientes</li><li>Admin</li></ul>
+      </li>
+      <li class="ev ev-3 r" style="--i:7">
+        <p class="ev-when">Futuro</p><h3>Pro</h3>
+        <ul><li>Cocina</li><li>Delivery</li><li>Stock</li><li>Empleados</li><li>Fidelización</li><li>Analytics</li></ul>
+      </li>
+    </ol>
+    <svg class="evo-arrow r" style="--i:8" viewBox="0 0 400 120" aria-hidden="true"><path d="M8 110 C 140 104, 250 70, 380 14"/><path d="M352 12 L382 13 L372 41"/></svg>
+  </div>
+</section>
+
+<!-- =====================================================================
+     26 · QUÉ ESTÁ COMPRANDO REALMENTE
+     ===================================================================== -->
+<section class="slide s-value" id="s26" data-chapter="7" data-ui="light" aria-label="Qué estás sumando realmente">
+  <div class="bg"><div class="orange-light"></div></div>
+  <div class="stage">
+    <img class="value-burger r" style="--i:2" src="images/burger-recorte.webp" alt="Hamburguesa smash de Maldita Smash con cheddar fundido" width="851" height="799" loading="lazy" data-parallax="12">
+    <header class="value-head">
+      <p class="kicker r"><b>07</b> Evolución <i>/</i> El valor real</p>
+      <h2 class="t-h1 r" style="--i:1">Más que <span class="hl-box">funcionalidades.</span></h2>
+    </header>
+    <ol class="values">
+      <li class="r" style="--i:3"><span>01</span><h3>Una identidad digital propia</h3><p>La marca se traslada al entorno digital.</p></li>
+      <li class="r" style="--i:4"><span>02</span><h3>Un canal de ventas</h3><p>La web deja de ser solamente informativa.</p></li>
+      <li class="r" style="--i:5"><span>03</span><h3>Una herramienta de gestión</h3><p>El negocio obtiene información y control.</p></li>
+      <li class="r" style="--i:6"><span>04</span><h3>Una base tecnológica</h3><p>La plataforma puede crecer.</p></li>
+      <li class="r" style="--i:7"><span>05</span><h3>Una experiencia</h3><p>El cliente interactúa con Maldita Smash desde el primer clic.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- =====================================================================
+     27 · NO HACEMOS PLANTILLAS
+     ===================================================================== -->
+<section class="slide s-diff" id="s27" data-chapter="7" data-ui="light" aria-label="No hacemos plantillas">
+  <div class="stage">
+    <header class="diff-head">
+      <p class="kicker r"><b>07</b> Evolución <i>/</i> Diferencial</p>
+      <h2 class="t-mega r" style="--i:1">No hacemos<br>plantillas.</h2>
+    </header>
+    <div class="diff-txt">
+      <p class="t-lead r" style="--i:2">Cada proyecto parte de la identidad, las necesidades y los objetivos reales del comercio.</p>
+      <p class="t-body r" style="--i:3">Diseño, experiencia, arquitectura y funcionalidades se construyen alrededor del negocio.</p>
+    </div>
+    <div class="formula r" style="--i:4" role="img" aria-label="Tu marca más tu operación más tus clientes más tu visión es igual a tu plataforma">
+      <span>Tu marca</span><i>+</i><span>Tu operación</span><i>+</i><span>Tus clientes</span><i>+</i><span>Tu visión</span><i class="eq">=</i><span class="formula-r">Tu plataforma</span>
+    </div>
+    <p class="diff-kicker r" style="--i:5">La tecnología se adapta al negocio. <b>El negocio no tiene que adaptarse a la tecnología.</b></p>
+    <span class="stamp r" style="--i:6" aria-hidden="true">Hecho a medida<br><b>para Maldita Smash</b></span>
+  </div>
+</section>
+
+<!-- =====================================================================
+     28 · RECOMENDACIÓN
+     ===================================================================== -->
+<section class="slide s-reco" id="s28" data-chapter="7" data-ui="dark" aria-label="Recomendación">
+  <div class="stage">
+    <header class="reco-head">
+      <p class="kicker r"><b>07</b> Evolución <i>/</i> Recomendación</p>
+      <h2 class="t-h1 r" style="--i:1">Nuestra <span class="hl-y">recomendación.</span></h2>
+    </header>
+
+    <div class="reco">
+      <article class="rc r" style="--i:2">
+        <h3>Start</h3><p class="rc-ideal">Ideal para comenzar.</p>
+        <p>Presencia profesional y pedidos online con la menor inversión.</p>
+      </article>
+      <article class="rc rc--feat r" style="--i:3">
+        <span class="rc-badge">El punto de equilibrio</span>
+        <h3>Business</h3><p class="rc-ideal">Ideal para transformar la web en un canal de ventas real.</p>
+        <p>Permite pasar de una presencia digital a un verdadero canal propio de ventas.</p>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Pago online integrado con Mercado Pago.</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Pedidos y clientes en un sistema propio.</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Métricas profesionales para decidir mejor.</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Base lista para crecer a PRO sin empezar de cero.</li>
+        </ul>
+        <p class="rc-price">USD 1.600 · 3–4 semanas</p>
+      </article>
+      <article class="rc rc--pro r" style="--i:4">
+        <h3>Pro</h3><p class="rc-ideal">Ideal para centralizar la operación digital.</p>
+        <p>La propuesta de mayor potencial: ventas, cocina, delivery, stock, equipo y datos en una sola plataforma.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     29 · CIERRE
+     ===================================================================== -->
+<section class="slide s-close" id="s29" data-chapter="7" data-ui="dark" aria-label="Cierre">
+  <div class="bg"><div class="close-glow"></div></div>
+  <div class="stage">
+    <div class="close-copy">
+      <img class="close-logo r" src="images/logo-mark-red-sm.webp" alt="Isotipo de Maldita Smash" width="240" height="221" loading="lazy">
+      <h2 class="close-title r" style="--i:1">Maldita Smash<br><span>no necesita</span><br><span>una web más.</span></h2>
+      <p class="close-sub r" style="--i:2">Necesita una experiencia que esté a la altura de su marca.</p>
+      <p class="t-body close-txt r" style="--i:3">Nuestra propuesta es construir una experiencia digital propia, visualmente reconocible, técnicamente sólida y preparada para crecer junto al negocio.</p>
+    </div>
+    <div class="close-mascot r" style="--i:2" data-parallax="16">
+      <img src="images/mascota-rebelde.webp" alt="La mascota de Maldita Smash, desafiante" width="576" height="803" loading="lazy">
+    </div>
+    <p class="close-end r" style="--i:4">La marca ya tiene actitud.<br><b>Ahora llevémosla a internet.</b></p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     30 · CTA FINAL
+     ===================================================================== -->
+<section class="slide s-cta" id="s30" data-chapter="7" data-ui="dark" aria-label="Hablemos del proyecto">
+  <div class="bg"><img class="cta-m" src="images/logo-mark-yellow.webp" alt="" width="720" height="663" loading="lazy"></div>
+  <div class="stage">
+    <div class="cta-copy">
+      <p class="kicker kicker--light r">Próximo paso</p>
+      <h2 class="t-mega r" style="--i:1">Hablemos<br>del proyecto.</h2>
+      <p class="t-lead r" style="--i:2">Definimos juntos el alcance, seleccionamos la propuesta adecuada y comenzamos a transformar la identidad de Maldita Smash en una experiencia digital.</p>
+      <ol class="next">
+        <li class="r" style="--i:3"><span>01</span>Reunión de alcance</li>
+        <li class="r" style="--i:4"><span>02</span>Elección del plan</li>
+        <li class="r" style="--i:5"><span>03</span>Inicio del proyecto</li>
+      </ol>
+    </div>
+    <address class="contact r" style="--i:4">
+      <p class="contact-h">Contacto</p>
+      <p class="ph-field"><small>Estudio</small><span>[ Nombre / Estudio ]</span></p>
+      <p class="ph-field"><small>Email</small><span>[ Email ]</span></p>
+      <p class="ph-field"><small>Teléfono</small><span>[ Teléfono ]</span></p>
+      <p class="ph-field"><small>Web</small><span>[ Web ]</span></p>
+      <button class="btn btn-dl btn-dl--xl" type="button" data-print><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg><span>Descargar propuesta (PDF)</span></button>
+    </address>
+  </div>
+</section>
+
+</main>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>

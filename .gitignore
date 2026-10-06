@@ -1,0 +1,28 @@
+# Sistema operativo
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependencias y caches
+node_modules/
+__pycache__/
+*.pyc
+.cache/
+
+# Temporales, logs y capturas de prueba
+*.log
+*.tmp
+tmp/
+temp/
+screenshots/
+capturas/
+
+# Binario de desarrollo (se compila desde propuesta/tools/lift.swift)
+propuesta/tools/lift
